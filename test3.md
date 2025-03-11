@@ -153,25 +153,13 @@ Ett antal kundordrar som alla tillhör ett specifikt geografiskt område och är
 | --- | --- | --- |
 | ![Planning order](https://docs.pindeliver.com/images/icons/planning_order.png) | Planeringsorder | Ett antal kundordrar som alla tillhör ett specifikt geografiskt område och är avsedda för en leveransgrupp, och som är schemalagda för leverans samma dag. När ruttplaneringen är slutförd kommer planeringsordern att delas upp i rutter. Planeringsordrar importeras vanligtvis via antingen Excel eller API. |
 | ![Route](https://docs.pindeliver.com/images/icons/route.png) | Rutt | När en planeringsorder optimeras för rutt, genereras en rutt för att transportera varor till godsmottagare. Denna rutt är specifikt utformad för ett angivet fordon för att säkerställa en effektiv leverans. Rutter kan ha olika statusar, inklusive deras framsteg och aktuella tillstånd. Dessa statusar inkluderar Olåst/Låst, Ej påbörjad/Påbörjad/Avslutad. Statusen Olåst/Låst hänvisar till om rutten kan modifieras eller inte. Statusen Ej påbörjad/Påbörjad/Avslutad indikerar vilken fas rutten befinner sig i, från startad till avslutad. |
-| ![Customer order](https://docs.pindeliver.com/images/icons/delivery.png) | Leverans | Leverans (eller upphämtning) till en kund
+| ![Customer order](https://docs.pindeliver.com/images/icons/delivery.png) | Leverans | Leverans (eller upphämtning) till en kund |
 | ![Delivery group](https://docs.pindeliver.com/images/icons/delivery_group.png) | Leveransgrupp | Används för att dela upp leveranser baserat på plats, användarbehörigheter eller andra kriterier. En användare kan ha behörigheter för en eller flera leveransgrupper. En planeringsorder kan endast innehålla beställningar som är associerade med samma leveransgrupp. |
 | ![Depot](https://docs.pindeliver.com/images/icons/depot.png) | Depå | En lastningsplats seperat från fordonets initiala position. Varje leveransgrupp har en depå. Varje depå tilldelas en adress och en standardlastningstid som används vid ruttoptimering. Möjliggör omlastning av fordon under ruttplanering, vilket tillåter skapandet av rutter med flera laststopp. |
-| ![Vehicle](https://docs.pindeliver.com/images/icons/vehicle.png) | Fordon | Associeras med en leveransgrupp.
-Specifika tidsluckor för tillgänglighet.
-Definierad startplats.
-Kan ha begränsningar på faktorer som vikt och volym. |
-| ![Driver](https://docs.pindeliver.com/images/icons/driver.png) | Förare | Länkad till en eller flera leveransgrupper
-Obligatoriskt att inneha en e-postadress eller ett telefonnummer.
-Varje rutt tilldelas en förare |
-| ![Sender](https://docs.pindeliver.com/images/icons/sender.png) | Avsändare | Varje leverans har en avsändare associerad till sig.
-En avsändare kan tillhandahålla en e-postadress och ett kundtjänstnummer.
-Avsändarens namn, e-postadress och telefonnummer kan användas för kundkommunikation. |
-| ![Package](https://docs.pindeliver.com/images/icons/package.png) | Paket | Varje leverans måste innehålla minst ett paket. Paket kallas även för kolli.
-Ett paket kan definieras av dessa:
-Namn
-Paket-ID
-Antal
-Spårningsnummer |
+| ![Vehicle](https://docs.pindeliver.com/images/icons/vehicle.png) | Fordon | Associeras med en leveransgrupp. -Specifika tidsluckor för tillgänglighet. - Definierad startplats. - Kan ha begränsningar på faktorer som vikt och volym. |
+| ![Driver](https://docs.pindeliver.com/images/icons/driver.png) | Förare | Länkad till en eller flera leveransgrupper. Obligatoriskt att inneha en e-postadress eller ett telefonnummer. Varje rutt tilldelas en förare |
+| ![Sender](https://docs.pindeliver.com/images/icons/sender.png) | Avsändare | Varje leverans har en avsändare associerad till sig. En avsändare kan tillhandahålla en e-postadress och ett kundtjänstnummer. Avsändarens namn, e-postadress och telefonnummer kan användas för kundkommunikation. |
+| ![Package](https://docs.pindeliver.com/images/icons/package.png) | Paket | Varje leverans måste innehålla minst ett paket. Paket kallas även för kolli. Ett paket kan definieras av dessa: Namn, Paket-ID, Antal, Spårningsnummer |
 
 
 # Anvandarfall
@@ -261,9 +249,6 @@ Denna inställning bestämmer hur många minuter före en planerad leveranstid e
 | --- | --- | --- |
 | Allmänna inställningar |  |  |
 |  | Noggrannhet i leveranstidsintervall | Detta fält specifierar längden, i minuter, för det leveranstidsintervall som visas för dina kunder. Använd det minsta intervall som är hanterbart för bättre kundnöjdhet. |
-
-|  |
-|  | Påminnelsetid, när föraren är X minuter från kundstopp. |
 |  | Påminnelsetid, när föraren är X minuter från kundstopp. | Denna inställning bestämmer hur många minuter före en planerad leveranstid ett SMS ska skickas till kunden. pinDeliver identifierar leveranser inom X minuter och skickar SMS-meddelanden baserat på mallen som beskrivs nedan. Observera att endast stopp inom X minuter kommer att få ett meddelande, begränsat till ett meddelande per stopp. Om ditt schema är tight, kommer varje stopp endast att få ett meddelande, även om det finns flera stopp inom X minuter innan du når stoppet. Men om körtiden mellan stoppen är större än X minuter, får det stoppet inget meddelande alls. |
 |  | Välj språk för meddelanden | Välj det språk du vill använda för att skapa meddelandemallar. |
 | Leverans | Skicka SMS när en rutt är låst | Detta meddelanden skickas till alla kunder på rutten när rutten är låst. |
@@ -274,8 +259,6 @@ Denna inställning bestämmer hur många minuter före en planerad leveranstid e
 |  | Skicka SMS när en förare rapporterar att en leverans har gjorts, men kunden inte var hemma | Skickar ett SMS med tiden för genomförd leverans när kunden inte var hemma. Om föraren har tagit ett foto, visas det på kundens informationssida som kan länkas i meddelandet. |
 |  | Skicka SMS till kund när en förare rapporterar att en leverans inte har gjorts | Skickar ett SMS för att informera kunden om att leveransen var misslyckad. Om föraren har tagit ett foto, visas det på kundens informationssida som kan länkas i meddelandet. |
 |  | Skicka SMS när en kund skapas | Detta meddelandet skickas när en ny kund skapas. |
-| Upphämtning |
-| Upphämtning | Skicka SMS när rutten är låst |
 | Upphämtning | Skicka SMS när rutten är låst | Detta meddelande skickas till alla kunder på rutten när rutten är låst. |
 |  | Aktivera manuell SMS-knapp | När du klickar på denna knapp skickas meddelandet till alla kunder i upphämtningsordern. |
 |  | Skicka SMS till kunder när föraren startar upphämtning | När upphämtningsordern startas skickas detta meddelande till alla kunder i upphämtningsordern. |
