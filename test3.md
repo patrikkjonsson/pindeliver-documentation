@@ -151,52 +151,21 @@ Ett antal kundordrar som alla tillhör ett specifikt geografiskt område och är
 
 | Symbol | Term | Beskrivning |
 | --- | --- | --- |
-| ![Planning order](https://docs.pindeliver.com/images/icons/planning_order.png) |
-| ![Planning order](https://docs.pindeliver.com/images/icons/planning_order.png) | Planeringsorder |
 | ![Planning order](https://docs.pindeliver.com/images/icons/planning_order.png) | Planeringsorder | Ett antal kundordrar som alla tillhör ett specifikt geografiskt område och är avsedda för en leveransgrupp, och som är schemalagda för leverans samma dag. När ruttplaneringen är slutförd kommer planeringsordern att delas upp i rutter. Planeringsordrar importeras vanligtvis via antingen Excel eller API. |
-
-| ![Route](https://docs.pindeliver.com/images/icons/route.png) |
-| ![Route](https://docs.pindeliver.com/images/icons/route.png) | Rutt |
 | ![Route](https://docs.pindeliver.com/images/icons/route.png) | Rutt | När en planeringsorder optimeras för rutt, genereras en rutt för att transportera varor till godsmottagare. Denna rutt är specifikt utformad för ett angivet fordon för att säkerställa en effektiv leverans. Rutter kan ha olika statusar, inklusive deras framsteg och aktuella tillstånd. Dessa statusar inkluderar Olåst/Låst, Ej påbörjad/Påbörjad/Avslutad. Statusen Olåst/Låst hänvisar till om rutten kan modifieras eller inte. Statusen Ej påbörjad/Påbörjad/Avslutad indikerar vilken fas rutten befinner sig i, från startad till avslutad. |
-
-| ![Customer order](https://docs.pindeliver.com/images/icons/delivery.png) |
-| ![Customer order](https://docs.pindeliver.com/images/icons/delivery.png) | Leverans |
 | ![Customer order](https://docs.pindeliver.com/images/icons/delivery.png) | Leverans | Leverans (eller upphämtning) till en kund
-Tre olika typer av åtgärder:
-OK
-Ej hemma
-Ej levererad
-Företagsdefinierade avvikelsekoder kan användas när leveransen inte utförs. |
-
-| ![Delivery group](https://docs.pindeliver.com/images/icons/delivery_group.png) |
-| ![Delivery group](https://docs.pindeliver.com/images/icons/delivery_group.png) | Leveransgrupp |
 | ![Delivery group](https://docs.pindeliver.com/images/icons/delivery_group.png) | Leveransgrupp | Används för att dela upp leveranser baserat på plats, användarbehörigheter eller andra kriterier. En användare kan ha behörigheter för en eller flera leveransgrupper. En planeringsorder kan endast innehålla beställningar som är associerade med samma leveransgrupp. |
-
-| ![Depot](https://docs.pindeliver.com/images/icons/depot.png) |
-| ![Depot](https://docs.pindeliver.com/images/icons/depot.png) | Depå |
 | ![Depot](https://docs.pindeliver.com/images/icons/depot.png) | Depå | En lastningsplats seperat från fordonets initiala position. Varje leveransgrupp har en depå. Varje depå tilldelas en adress och en standardlastningstid som används vid ruttoptimering. Möjliggör omlastning av fordon under ruttplanering, vilket tillåter skapandet av rutter med flera laststopp. |
-
-| ![Vehicle](https://docs.pindeliver.com/images/icons/vehicle.png) |
-| ![Vehicle](https://docs.pindeliver.com/images/icons/vehicle.png) | Fordon |
 | ![Vehicle](https://docs.pindeliver.com/images/icons/vehicle.png) | Fordon | Associeras med en leveransgrupp.
 Specifika tidsluckor för tillgänglighet.
 Definierad startplats.
 Kan ha begränsningar på faktorer som vikt och volym. |
-
-| ![Driver](https://docs.pindeliver.com/images/icons/driver.png) |
-| ![Driver](https://docs.pindeliver.com/images/icons/driver.png) | Förare |
 | ![Driver](https://docs.pindeliver.com/images/icons/driver.png) | Förare | Länkad till en eller flera leveransgrupper
 Obligatoriskt att inneha en e-postadress eller ett telefonnummer.
 Varje rutt tilldelas en förare |
-
-| ![Sender](https://docs.pindeliver.com/images/icons/sender.png) |
-| ![Sender](https://docs.pindeliver.com/images/icons/sender.png) | Avsändare |
 | ![Sender](https://docs.pindeliver.com/images/icons/sender.png) | Avsändare | Varje leverans har en avsändare associerad till sig.
 En avsändare kan tillhandahålla en e-postadress och ett kundtjänstnummer.
 Avsändarens namn, e-postadress och telefonnummer kan användas för kundkommunikation. |
-
-| ![Package](https://docs.pindeliver.com/images/icons/package.png) |
-| ![Package](https://docs.pindeliver.com/images/icons/package.png) | Paket |
 | ![Package](https://docs.pindeliver.com/images/icons/package.png) | Paket | Varje leverans måste innehålla minst ett paket. Paket kallas även för kolli.
 Ett paket kan definieras av dessa:
 Namn
@@ -217,60 +186,18 @@ Grundinställningar täcker all information om ditt företag. Se bilden nedan f�
 
 | Segment | Fält | Beskrivning |
 | --- | --- | --- |
-| Organisation |
-| Organisation |  |
 | Organisation |  |  |
-
-|  |
-|  | Namn |
 |  | Namn | Icke-redigerbart företagsnamn som sätts av pinDeliver när kontot skapas |
-
-|  |
-|  | Organisationsnummer |
 |  | Organisationsnummer | Företagets organisationsnummer |
-
-| Adress |
-| Adress |  |
-| Adress |  |  |
-
-|  |
-|  | Adress |
 |  | Adress | Företagets adress |
-
-|  |
-|  | Postnummer |
 |  | Postnummer | Företagets postnummer |
-
-|  |
-|  | Stad |
 |  | Stad | Företagets stad |
-
-| Kontaktperson |
-| Kontaktperson |  |
 | Kontaktperson |  |  |
-
-|  |
-|  | Namn |
 |  | Namn | Namn på kontaktperson som är ansvarig för pinDeliver-avtalet och användningen |
-
-|  |
-|  | Telefon |
 |  | Telefon | Telefonnummer till kontaktperson |
-
-|  |
-|  | E-post |
 |  | E-post | E-postadress till kontaktperson |
-
-| Kundtjänst |
-| Kundtjänst |  |
 | Kundtjänst |  |  |
-
-|  |
-|  | Telefon |
 |  | Telefon | Telefonnummer till intern kundtjänst. Används av förare. |
-
-|  |
-|  | E-post |
 |  | E-post | E-postadress till intern kundtjänst. Används av förare. |
 
 
@@ -288,54 +215,21 @@ Från vikt
 
 | Fält | Beskrivning |
 | --- | --- |
-| Körhastighet |
 | Körhastighet | Justerar hastighetsfaktorn för körning. 100% representerar normal hastighet, och att sätta den till exempelvis 80% kommer att minska körtiderna med 20% samtidigt som stopptiderna bibehålls. |
-
-| Genomsnittlig stopptid ( i minuter) |
 | Genomsnittlig stopptid ( i minuter) | Standard stopptid för fordonet om ingen annan tid är definierad i leveransgruppen eller kundordern |
-
-| Tilläggstid för företagsstopp (i minuter) |
 | Tilläggstid för företagsstopp (i minuter) | Anger de extra minuter som läggs till vid ett stopp om det kategoriseras som ett business-to-business (B2B) stopp. Om stopptid är definierad på den enskilda kundordern har detta fält ingen effekt. |
-
-| Från vikt |
 | Från vikt | Del av vikttabellen som används för att lägga till stopptid för tunga varor. Kopplas till fältet ”Tilläggstid” |
-
-| Tilläggstid |
-| Tilläggstid | Antal minuter som läggs till för den angivna vikten i fältet ”Från vikt”. Du kan lägga till fler rader med olika specifikationer. |
-
-| Tid för tidigaste leverans |
-| Tid för tidigaste leverans | Standardtid startas för leveransfönster som används om inget leveransfönster är specifierat för fordonet eller kunden. |
-
-| Tid för senaste leverans |
+| Tilläggstid | Antal minuter som läggs till för den angivna vikten i fältet ”Från vikt”. Du kan lägga till fler rader med olika specifikationer. | Tid för tidigaste leverans | Standardtid startas för leveransfönster som används om inget leveransfönster är specifierat för fordonet eller kunden. |
 | Tid för senaste leverans | Standard sluttid för leveransfönster som används om inget leveransfönster är specifierat för fordonet eller kunden. |
-
-| Inkludera stopptid i leveransfönster |
 | Inkludera stopptid i leveransfönster | Om aktiverad kommer hela leveransen att ske inom det specifierade tidsfönstret. Om inte, kan vi endast garantera leverans i början av leveransfönstret innan det avslutas. |
-
-| Leveranstidsintervall utanför kundens tidsfönster |
 | Leveranstidsintervall utanför kundens tidsfönster | Definierar hur leveranstider ska visas när en del av leveranstidsintervallet är utanför kundens tidsfönster. Till exempel, om kundens tidsfönster är 16:00-20:00, bestämmer denna inställning hur leveranstider visas när de faller mellan 18:15-20:15. |
-
-| Klippning av leveranstidsintervall till kundens tidsfönster |
 | Klippning av leveranstidsintervall till kundens tidsfönster | Detta alternativ är endast synligt när ”Leveranstidsintervall utanför kundens tidsfönster” är inställt på ”Klipp leveranstid”. Till exempel, om kundens tidsfönster är 16:00-20:00 och leveranstidsintervallet är 18:15-20:15, låter denna inställning dig välja om du vill justera leveranstidsintervallet till 18:00-20:00 eller minska det till 18:15-20:00. |
-
-| Använd backorder-lista |
 | Använd backorder-lista | Istället för att misslyckas med en ruttoptimering som inte kan räkna med alla leveranser, lägger det här alternativet de misslyckade leveranserna på en backorderlista. |
-
-| Aktivera trafikregioner och trafikbegränsningar |
 | Aktivera trafikregioner och trafikbegränsningar | Möjliggör tillämpning av trafikregioner och trafikbegränsningar under ruttoptimering. Morgon-och kvällsrusningstider specificeras nedan. |
-
-| Morgonrusning Från |
 | Morgonrusning Från | Starttid för morgonrusning. Trafikbegränsingar justeras i sektionen Trafikbegränsingar. |
-
-| Morgonrusning Till |
 | Morgonrusning Till | Sluttid för morgonrusning. Trafikbegränsningar justerad i sektionen Trafikbegränsningar. |
-
-| Kvällsrusning Från |
 | Kvällsrusning Från | Starttid för kvällsrusning. Trafikbegränsningar justeras i sektionen Trafikbegränsningar. |
-
-| Kvällsrusning Till |
 | Kvällsrusning Till | Sluttid för kvällsrusning. Trafikbegränsningar justeras i sektionen Trafikbegränsningar. |
-
 
 ## Click & Collect
 
@@ -365,79 +259,28 @@ Denna inställning bestämmer hur många minuter före en planerad leveranstid e
 
 | Segment | Fält | Beskrivning |
 | --- | --- | --- |
-| Allmänna inställningar |
-| Allmänna inställningar |  |
 | Allmänna inställningar |  |  |
-
-|  |
-|  | Noggrannhet i leveranstidsintervall |
 |  | Noggrannhet i leveranstidsintervall | Detta fält specifierar längden, i minuter, för det leveranstidsintervall som visas för dina kunder. Använd det minsta intervall som är hanterbart för bättre kundnöjdhet. |
 
 |  |
 |  | Påminnelsetid, när föraren är X minuter från kundstopp. |
 |  | Påminnelsetid, när föraren är X minuter från kundstopp. | Denna inställning bestämmer hur många minuter före en planerad leveranstid ett SMS ska skickas till kunden. pinDeliver identifierar leveranser inom X minuter och skickar SMS-meddelanden baserat på mallen som beskrivs nedan. Observera att endast stopp inom X minuter kommer att få ett meddelande, begränsat till ett meddelande per stopp. Om ditt schema är tight, kommer varje stopp endast att få ett meddelande, även om det finns flera stopp inom X minuter innan du når stoppet. Men om körtiden mellan stoppen är större än X minuter, får det stoppet inget meddelande alls. |
-|  | Påminnelsetid, när föraren är X minuter från kundstopp. | Denna inställning bestämmer hur många minuter före en planerad leveranstid ett SMS ska skickas till kunden. pinDeliver identifierar leveranser inom X minuter och skickar SMS-meddelanden baserat på mallen som beskrivs nedan. Observera att endast stopp inom X minuter kommer att få ett meddelande, begränsat till ett meddelande per stopp. Om ditt schema är tight, kommer varje stopp endast att få ett meddelande, även om det finns flera stopp inom X minuter innan du når stoppet. Men om körtiden mellan stoppen är större än X minuter, får det stoppet inget meddelande alls. | Denna inställning bestämmer hur många minuter före en planerad leveranstid ett SMS ska skickas till kunden. pinDeliver identifierar leveranser inom X minuter och skickar SMS-meddelanden baserat på mallen som beskrivs nedan. Observera att endast stopp inom X minuter kommer att få ett meddelande, begränsat till ett meddelande per stopp. Om ditt schema är tight, kommer varje stopp endast att få ett meddelande, även om det finns flera stopp inom X minuter innan du når stoppet. Men om körtiden mellan stoppen är större än X minuter, får det stoppet inget meddelande alls. |
-
-| Denna inställning bestämmer hur många minuter före en planerad leveranstid ett SMS ska skickas till kunden. pinDeliver identifierar leveranser inom X minuter och skickar SMS-meddelanden baserat på mallen som beskrivs nedan. Observera att endast stopp inom X minuter kommer att få ett meddelande, begränsat till ett meddelande per stopp. Om ditt schema är tight, kommer varje stopp endast att få ett meddelande, även om det finns flera stopp inom X minuter innan du når stoppet. Men om körtiden mellan stoppen är större än X minuter, får det stoppet inget meddelande alls. |
-
-|  |
-|  | Välj språk för meddelanden |
 |  | Välj språk för meddelanden | Välj det språk du vill använda för att skapa meddelandemallar. |
-
-| Leverans |
-| Leverans | Skicka SMS när en rutt är låst |
 | Leverans | Skicka SMS när en rutt är låst | Detta meddelanden skickas till alla kunder på rutten när rutten är låst. |
-
-|  |
-|  | Aktivera manuell SMS-knapp |
 |  | Aktivera manuell SMS-knapp | Denna inställning aktiverar en knapp i körlistan som gör det möjligt för användaren att skicka meddelanden till alla kunder på rutten. |
-
-|  |
-|  | Skicka SMS när föraren startar rutten |
 |  | Skicka SMS när föraren startar rutten | När en förare startar en rutt skickas detta meddelanden till alla kunder på rutten. |
-
-|  |
-|  | Skicka SMS när föraren har avslutat (om)lastning |
 |  | Skicka SMS när föraren har avslutat (om)lastning | När föraren markerar ”lastning klar” skickas ett meddelande till alla kunder som förväntar sig en leverans från denna lastning. |
-
-|  |
-|  | Skicka SMS-påminnelse till kund när föraren är inom X minuter från destinationer |
 |  | Skicka SMS-påminnelse till kund när föraren är inom X minuter från destinationer | Denna inställning triggar en SMS-påminnelse när föraren är X minuter från kundens destination. Värdet på X bestäms av påminnelsetiden som anges i ”Påminnelsetid, när föraren är X minuter från kundstopp”. |
-
-|  |
-|  | Skicka SMS när en förare rapporterar att en leverans har gjorts, men kunden inte var hemma |
 |  | Skicka SMS när en förare rapporterar att en leverans har gjorts, men kunden inte var hemma | Skickar ett SMS med tiden för genomförd leverans när kunden inte var hemma. Om föraren har tagit ett foto, visas det på kundens informationssida som kan länkas i meddelandet. |
-
-|  |
-|  | Skicka SMS till kund när en förare rapporterar att en leverans inte har gjorts |
 |  | Skicka SMS till kund när en förare rapporterar att en leverans inte har gjorts | Skickar ett SMS för att informera kunden om att leveransen var misslyckad. Om föraren har tagit ett foto, visas det på kundens informationssida som kan länkas i meddelandet. |
-
-|  |
-|  | Skicka SMS när en kund skapas |
 |  | Skicka SMS när en kund skapas | Detta meddelandet skickas när en ny kund skapas. |
-
 | Upphämtning |
 | Upphämtning | Skicka SMS när rutten är låst |
 | Upphämtning | Skicka SMS när rutten är låst | Detta meddelande skickas till alla kunder på rutten när rutten är låst. |
-
-|  |
-|  | Aktivera manuell SMS-knapp |
 |  | Aktivera manuell SMS-knapp | När du klickar på denna knapp skickas meddelandet till alla kunder i upphämtningsordern. |
-
-|  |
-|  | Skicka SMS till kunder när föraren startar upphämtning |
 |  | Skicka SMS till kunder när föraren startar upphämtning | När upphämtningsordern startas skickas detta meddelande till alla kunder i upphämtningsordern. |
-
-|  |
-|  | Skicka SMS till kunder när föraren är klar på depån |
 |  | Skicka SMS till kunder när föraren är klar på depån | När Click & Collect är slutförd på depån skickas detta meddelande till alla kunder i upphämtningsordern. |
-
-|  |
-|  | Skicka SMS till kunder när leverans inte hämtas |
 |  | Skicka SMS till kunder när leverans inte hämtas | När föraren rapporterar att rutten är slutförd skickas detta meddelande till alla kunder som inte har hämtat sina leveranser. |
-
-|  |
-|  | Skicka SMS när en kund skapas |
 |  | Skicka SMS när en kund skapas | Detta meddelande skickas när en ny kund skapas. |
 
 
@@ -459,65 +302,21 @@ Skicka e-post när en rutt är låst.
 | Allmänna inställningar |
 | Allmänna inställningar | Avsändarnamn (E-post-avsändarnamn) |
 | Allmänna inställningar | Avsändarnamn (E-post-avsändarnamn) | E-post som skickas från pinDeliver visar avsändarnamnet som pinDeliver. Du kan ange ett annat avsändarnamn i detta fält. Om ett avsändarnamn anges i en leverans kommer det att ha företräde över denna inställning. |
-
-|  |
-|  | Svarsadress (E-post-svarsadress |
 |  | Svarsadress (E-post-svarsadress | Som standard skickas e-post från pinDeliver från e-postadressen noreply@pindeliver.com. Om du vill att kunder ska kunna svara på e-posten kan du ange en svarsadress i detta fält. |
-
-|  |
-|  | Välj språk för meddelanden |
 |  | Välj språk för meddelanden | Välj det språk du vill använda för att skapa meddelandemallar. |
-
-| Leverans |
-| Leverans | Skicka e-post när en rutt är låst. |
 | Leverans | Skicka e-post när en rutt är låst. | När en rutt är låst skickas detta e-postmeddelande till alla kunder på rutten. |
-
-|  |
-|  | Aktivera manuell e-postknapp |
 |  | Aktivera manuell e-postknapp | Möjliggör en knapp i körlistan som gör det möjligt att skicka e-post till alla kunder på den specifika rutten. |
 
-|  |
-|  | Skicka e-post när föraren startar rutten |
 |  | Skicka e-post när föraren startar rutten | När en förare startar en rutt skickas detta e-postmeddelande till alla kunder på rutten. |
-
-|  |
-|  | Skicka e-post när föraren har avslutat (om)lastning |
 |  | Skicka e-post när föraren har avslutat (om)lastning | När föraren klickar på ”lastning klar” skickas ett meddelande till alla kunder som kommer att få en leverans från denna last. |
-
-|  |
-|  | Skicka e-postpåminnelse till kund när föraren är inom X minuter från destinationen |
 |  | Skicka e-postpåminnelse till kund när föraren är inom X minuter från destinationen | En e-postpåminnelse skickas X minuter från destinationen. X ersätts med påminnelsetiden som ställs in i SMS-inställningarna för ”Påminnelsetid, när föraren är X minuter från kundstopp”. |
-
-|  |
-|  | Skicka e-post när en förare rapporterar att en leverans har gjorts, men kunden inte var hemma. |
 |  | Skicka e-post när en förare rapporterar att en leverans har gjorts, men kunden inte var hemma. | Skickar ett e-postmeddelande med tiden för genomförd leverans när kunden inte var hemma. |
-
-|  |
-|  | Skicka e-post till kund när en förare rapporterar att en leverans inte har gjorts |
 |  | Skicka e-post till kund när en förare rapporterar att en leverans inte har gjorts | Skickar ett e-postmeddelanden för att informera kunden om att leveransen var misslyckad. |
-
-|  |
-|  | Skicka e-post när en kund skapas |
 |  | Skicka e-post när en kund skapas | Detta meddelande skickas när en ny kund skapas. |
-
-| Upphämtning |
-| Upphämtning | Skicka e-post när rutten är låst |
 | Upphämtning | Skicka e-post när rutten är låst | När en rutt är låst skickas detta e-postmeddelande till alla kunder i rutten. |
-
-|  |
-|  | Aktivera manuell e-postknapp |
 |  | Aktivera manuell e-postknapp | När knappen trycks skickas detta e-postmeddelande till alla kunder i upphämtningsordern. |
-
-|  |
-|  | Skicka e-post till kunder när föraren är klar på depån |
 |  | Skicka e-post till kunder när föraren är klar på depån | När upphämtningsordern på depån skickas detta e-postmeddelande till alla kunder i upphämtningsordern. |
-
-|  |
-|  | Skicka e-post till kunder när leverans inte hämtas |
 |  | Skicka e-post till kunder när leverans inte hämtas | När upphämtningsordern är slutförd skickas detta e-postmeddelande till alla kunder som inte har hämtat sina leveranser. |
-
-|  |
-|  | Skicka e-post när en kund skapas |
 |  | Skicka e-post när en kund skapas | Detta e-postmeddelande skickas när en ny kund skapas. |
 
 
@@ -535,24 +334,10 @@ Du kan se aktiva scheman i schema-segmentet.
 
 | Segment | Fält | Beskrivning |
 | --- | --- | --- |
-| Email |
-| Email | Aktivera automatiska e-postmeddelanden |
 | Email | Aktivera automatiska e-postmeddelanden | Aktiverar automatiska e-postmeddelanden som skickas till alla mottagare på rutten baserat på scheman. |
-
-| SMS |
-| SMS | Skicka SMS automatiskt |
 | SMS | Skicka SMS automatiskt | Aktiverar automatiska SMS-meddelanden som skickas till alla mottagare på rutten baserat på scheman. |
-
-| Skapa nya scheman |
-| Skapa nya scheman | Typ av meddelande |
 | Skapa nya scheman | Typ av meddelande | Anger om endast e-post, SMS eller både meddelandetyperna ska skickas för varje schema. |
-
-|  |
-|  | Tid |
 |  | Tid | Ställer in vilken tid på dagen meddelandet/meddelandena ska skickas. |
-
-|  |
-|  | Veckodag |
 |  | Veckodag | Avgör om meddelandeschemat ska gälla en specifik dag eller alla dagar. För schemaläggning endast på vissa veckodagar, skapa ett schema för varje veckodag. |
 
 
@@ -576,132 +361,26 @@ Anger tiden i minuter innan den planerade rutten startar som föraren kan börja
 
 | Segment | Fält | Beskrivning | Stöd i webbappen | Stöd i Native-appen |
 | --- | --- | --- | --- | --- |
-| Allmänt |
-| Allmänt | Aktivera användning av Go Native-app |
-| Allmänt | Aktivera användning av Go Native-app | Tillåter användning av Native-appen. |
-| Allmänt | Aktivera användning av Go Native-app | Tillåter användning av Native-appen. |  |
 | Allmänt | Aktivera användning av Go Native-app | Tillåter användning av Native-appen. |  | X |
-
-|  |
-|  | Uppdatera förarens position under rutten |
-|  | Uppdatera förarens position under rutten | Om aktiverat uppdateras förarens position varje minut under en aktiv rutt. Annars visas den senaste kända positionen, vanligtvis det senaste stoppet. |
-|  | Uppdatera förarens position under rutten | Om aktiverat uppdateras förarens position varje minut under en aktiv rutt. Annars visas den senaste kända positionen, vanligtvis det senaste stoppet. |  |
 |  | Uppdatera förarens position under rutten | Om aktiverat uppdateras förarens position varje minut under en aktiv rutt. Annars visas den senaste kända positionen, vanligtvis det senaste stoppet. |  | X |
-
-|  |
-|  | Minuter innan planerad starttid som föraren får börja rutten |
-|  | Minuter innan planerad starttid som föraren får börja rutten | Anger tiden i minuter innan den planerade rutten startar som föraren kan börja rutten. En varning visas fram till den planerade starttiden. |
-|  | Minuter innan planerad starttid som föraren får börja rutten | Anger tiden i minuter innan den planerade rutten startar som föraren kan börja rutten. En varning visas fram till den planerade starttiden. | X |
 |  | Minuter innan planerad starttid som föraren får börja rutten | Anger tiden i minuter innan den planerade rutten startar som föraren kan börja rutten. En varning visas fram till den planerade starttiden. | X | X |
-
-|  |
-|  | Bild för status ”OK, Ej hemma” |
-|  | Bild för status ”OK, Ej hemma” | Öppnar automatiskt telefonens kamera när man hanterar ett OK, Ej hemma-stopp. Bilden är synlig på kundsidan. |
-|  | Bild för status ”OK, Ej hemma” | Öppnar automatiskt telefonens kamera när man hanterar ett OK, Ej hemma-stopp. Bilden är synlig på kundsidan. | X |
 |  | Bild för status ”OK, Ej hemma” | Öppnar automatiskt telefonens kamera när man hanterar ett OK, Ej hemma-stopp. Bilden är synlig på kundsidan. | X | X |
-
-|  |
-|  | Kommentar vid status ”OK, Ej hemma” |
-|  | Kommentar vid status ”OK, Ej hemma” | Lägger till möjligheten att lämna en kommentar vid ett OK, Ej hemma-stopp. Kräver att ”Bild för OK, Ej hemma” är aktiverat. |
-|  | Kommentar vid status ”OK, Ej hemma” | Lägger till möjligheten att lämna en kommentar vid ett OK, Ej hemma-stopp. Kräver att ”Bild för OK, Ej hemma” är aktiverat. | X |
 |  | Kommentar vid status ”OK, Ej hemma” | Lägger till möjligheten att lämna en kommentar vid ett OK, Ej hemma-stopp. Kräver att ”Bild för OK, Ej hemma” är aktiverat. | X | X |
-
-|  |
-|  | Bild för status ”Ej levererad” |
-|  | Bild för status ”Ej levererad” | Sparar och visar en bild för ”Ej levererad”-stopp (synlig på kundsidan) |
-|  | Bild för status ”Ej levererad” | Sparar och visar en bild för ”Ej levererad”-stopp (synlig på kundsidan) | X |
 |  | Bild för status ”Ej levererad” | Sparar och visar en bild för ”Ej levererad”-stopp (synlig på kundsidan) | X | X |
-
-|  |
-|  | Bild för status ”OK, levererad” |
-|  | Bild för status ”OK, levererad” | Sparar och visar en bild för OK-stopp (synlig på kundsidan). |
-|  | Bild för status ”OK, levererad” | Sparar och visar en bild för OK-stopp (synlig på kundsidan). | X |
 |  | Bild för status ”OK, levererad” | Sparar och visar en bild för OK-stopp (synlig på kundsidan). | X | X |
-
-|  |
-|  | Kommentar vid status ”OK, levererad” |
-|  | Kommentar vid status ”OK, levererad” | Möjliggör kommentarer för OK-stopp. Kräver att ”Bild för status ”OK, levererad” är aktiverat. |
-|  | Kommentar vid status ”OK, levererad” | Möjliggör kommentarer för OK-stopp. Kräver att ”Bild för status ”OK, levererad” är aktiverat. |  |
 |  | Kommentar vid status ”OK, levererad” | Möjliggör kommentarer för OK-stopp. Kräver att ”Bild för status ”OK, levererad” är aktiverat. |  | X |
-
-|  |
-|  | Waze GPS-navigator |
-|  | Waze GPS-navigator | Visar en knapp på varje leveranskort i GO-appen. Knappen startar Waze som GPS-navigator om installerat. Annars öppnas webbläsarversionen av Waze. |
-|  | Waze GPS-navigator | Visar en knapp på varje leveranskort i GO-appen. Knappen startar Waze som GPS-navigator om installerat. Annars öppnas webbläsarversionen av Waze. | X |
 |  | Waze GPS-navigator | Visar en knapp på varje leveranskort i GO-appen. Knappen startar Waze som GPS-navigator om installerat. Annars öppnas webbläsarversionen av Waze. | X | X |
-
-|  |
-|  | Visa tidsfönster |
-|  | Visa tidsfönster | Visar leveransens tidsfönster i GO-appen. |
-|  | Visa tidsfönster | Visar leveransens tidsfönster i GO-appen. | X |
 |  | Visa tidsfönster | Visar leveransens tidsfönster i GO-appen. | X | X |
-
-|  |
-|  | Visa avsändare |
-|  | Visa avsändare | Visar leveransens avsändare i GO-appen. |
-|  | Visa avsändare | Visar leveransens avsändare i GO-appen. | X |
 |  | Visa avsändare | Visar leveransens avsändare i GO-appen. | X | X |
-
-|  |
-|  | Paketlastning |
-|  | Paketlastning | Ger föraren tillgång till paketsökningsfunktionalitet, vilket hjälper till att lasta paket på rätt fordon. |
-|  | Paketlastning | Ger föraren tillgång till paketsökningsfunktionalitet, vilket hjälper till att lasta paket på rätt fordon. |  |
 |  | Paketlastning | Ger föraren tillgång till paketsökningsfunktionalitet, vilket hjälper till att lasta paket på rätt fordon. |  | X |
-
-|  |
-|  | Använd lossningsskanning |
-|  | Använd lossningsskanning | Kräver att föraren skannar gods vid lossning på varje stopp. |
-|  | Använd lossningsskanning | Kräver att föraren skannar gods vid lossning på varje stopp. |  |
 |  | Använd lossningsskanning | Kräver att föraren skannar gods vid lossning på varje stopp. |  | X |
-
-|  |
-|  | Hantera returer |
-|  | Hantera returer | Tillåter föraren att ta emot returer från kunder. |
-|  | Hantera returer | Tillåter föraren att ta emot returer från kunder. | X |
 |  | Hantera returer | Tillåter föraren att ta emot returer från kunder. | X | X |
-
-|  |
-|  | Körjournal |
-|  | Körjournal | Tillåter föraren att rapportera en körjournal för rutten, inklusive detaljer som fordonets start- och stoppmätarställning. |
-|  | Körjournal | Tillåter föraren att rapportera en körjournal för rutten, inklusive detaljer som fordonets start- och stoppmätarställning. |  |
 |  | Körjournal | Tillåter föraren att rapportera en körjournal för rutten, inklusive detaljer som fordonets start- och stoppmätarställning. |  | X |
-
-|  |
-|  | Registrera stopptemperaturer |
-|  | Registrera stopptemperaturer | Tillåter föraren att rapportera varornas temperatur vid varje stopp. |
-|  | Registrera stopptemperaturer | Tillåter föraren att rapportera varornas temperatur vid varje stopp. |  |
 |  | Registrera stopptemperaturer | Tillåter föraren att rapportera varornas temperatur vid varje stopp. |  | X |
-
-| SMS till förare |
-| SMS till förare | SMS till förare när rutten har tilldelats |
-| SMS till förare | SMS till förare när rutten har tilldelats | Skickar ett SMS till föraren när en rutt har tilldelats, förutsatt att SMS är valt som kommunikationsmetod. |
-| SMS till förare | SMS till förare när rutten har tilldelats | Skickar ett SMS till föraren när en rutt har tilldelats, förutsatt att SMS är valt som kommunikationsmetod. | X |
 | SMS till förare | SMS till förare när rutten har tilldelats | Skickar ett SMS till föraren när en rutt har tilldelats, förutsatt att SMS är valt som kommunikationsmetod. | X | X |
-
-| E-post till förare |
-| E-post till förare | E-post till förare när rutten har tilldelats |
-| E-post till förare | E-post till förare när rutten har tilldelats | Skickar ett e-post till föraren när en rutt har tilldelats, förutsatt att e-post är valt som kommunikationsmetod. |
-| E-post till förare | E-post till förare när rutten har tilldelats | Skickar ett e-post till föraren när en rutt har tilldelats, förutsatt att e-post är valt som kommunikationsmetod. | X |
 | E-post till förare | E-post till förare när rutten har tilldelats | Skickar ett e-post till föraren när en rutt har tilldelats, förutsatt att e-post är valt som kommunikationsmetod. | X | X |
-
-| Avvikelsekoder |
-| Avvikelsekoder | Ordning |
-| Avvikelsekoder | Ordning | Tillåter att ändra ordningen på tillgängliga avvikelsekoder för föraren. Dra och släpp koder efter skapelse. |
-| Avvikelsekoder | Ordning | Tillåter att ändra ordningen på tillgängliga avvikelsekoder för föraren. Dra och släpp koder efter skapelse. | X |
-| Avvikelsekoder | Ordning | Tillåter att ändra ordningen på tillgängliga avvikelsekoder för föraren. Dra och släpp koder efter skapelse. | X | X |
-
-|  |
-|  | Kräver kommentar |
-|  | Kräver kommentar | Anger om föraren måste lämna en kommentar när en avvikelsekod väljs. |
-|  | Kräver kommentar | Anger om föraren måste lämna en kommentar när en avvikelsekod väljs. | X |
-|  | Kräver kommentar | Anger om föraren måste lämna en kommentar när en avvikelsekod väljs. | X | X |
-
-|  |
-|  | Aktiv |
-|  | Aktiv | Aktiverar eller avaktiverar en avvikelsekod. |
-|  | Aktiv | Aktiverar eller avaktiverar en avvikelsekod. | X |
+| Avvikelsekoder | Ordning | Tillåter att ändra ordningen på tillgängliga avvikelsekoder för föraren. Dra och släpp koder efter skapelse. | X | X |  | Kräver kommentar | Anger om föraren måste lämna en kommentar när en avvikelsekod väljs. | X | X |
 |  | Aktiv | Aktiverar eller avaktiverar en avvikelsekod. | X | X |
-
 
 ## Hubb-app
 
@@ -717,28 +396,13 @@ Bilden nedan ger ett exempel på Hubb-appen, där de inställningar som beskrivs
 
 | Fält | Beskrivning |
 | --- | --- |
-| Kvalitetskontroll |
 | Kvalitetskontroll | Visar en checklista över uppgifter som ska utföras innan en rutt påbörjas. |
-
-| Sorteringsskanning |
 | Sorteringsskanning | Skanna paket för sortering till olika rutter. |
-
-| Flytta uppdrag |
 | Flytta uppdrag | Skapa ett uppdrag för att överföra paket mellan rutter. |
-
-| Ankomstskanning |
 | Ankomstskanning | Skanna paket vid ankomst till terminalen, vilket gör dem tillgängliga för ruttplanering. |
-
-| Ankomstrapport |
 | Ankomstrapport | Ger en sammanfattning av alla varor som skannats vid ankomst. |
-
-| Lastningsskanning |
 | Lastningsskanning | Skanna paket för lastning på fordon. |
-
-| Skapa paket |
 | Skapa paket | Skapa ett nytt paket. |
-
-| Skanning för info |
 | Skanning för info | Skanna för att samla mer information om paketet. |
 
 
@@ -766,22 +430,11 @@ Denna inställning specificerar den minsta geolokalisationsnoggrannhet som kräv
 
 | Fält | Beskrivning |
 | --- | --- |
-| Prenumerera på händelser |
 | Prenumerera på händelser | När detta är aktiverat kan företaget prenumerera på olika händelsebaserade notifieringar. För detaljer om händelser, se förklaringen av fältet Händelse-URL. |
-
-| Händelse-URL |
 | Händelse-URL | Detta är en URL där pinDeliver skickar händelsenotifieringar för olika utlösare. Utlösare inkluderar händelser som orderruttning, rutt start och leverans slutförd. |
-
-| Fraktetikett som SVG-fil I pinDeliver API |
 | Fraktetikett som SVG-fil I pinDeliver API | Använd den här inställningen om du föredrar att exportera fraktetiketter i SVG-format istället för det förinställda PDF-formatet. Detta gäller endast vid användning av API. |
-
-| Farligt gods |
 | Farligt gods | Denna inställning styr tillgängligheten av ADR-fält. Om aktiverat, kommer dessa fält att vara tillgänglighet för användning. |
-
-| Tillåt att postnummer kan utelämnas för kundadresser |
 | Tillåt att postnummer kan utelämnas för kundadresser | När detta är inaktiverat, krävs alltid ett postnummer för kundadresser. Aktivering av denna inställning ger flexibilitet att inte kräva postnummer för varje order, vilket kan vara användbart för nya adresser eller när adressdata saknar postnummer. |
-
-| Minska geolokalisationsnoggranhet |
 | Minska geolokalisationsnoggranhet | Denna inställning specificerar den minsta geolokalisationsnoggrannhet som krävs för att en adress ska anses vara tillräckligt noggrann för ruttoptimering. Standardnoggrannheten är 70%.
 70% Indikerar att det returnerade resultatet speglar en approximation (vanligtvis på en väg) interpolerad mellan två exakta punkter (såsom korsningar).
 60% Indikerar att det returnerade resultatet speglar en approximation (vanligtvis på en väg) interpolerad mellan två exakta punkter (såsom korsningar).
@@ -792,7 +445,6 @@ Denna inställning specificerar den minsta geolokalisationsnoggrannhet som kräv
 60% Indikerar att det returnerade resultatet speglar en approximation (vanligtvis på en väg) interpolerad mellan två exakta punkter (såsom korsningar).
 50% Indikerar att det returnerade resultatet är det geometriska centrumet av ett resultat, såsom en polylinje (till exempel en gata)
 25% Indikerar att det returnerade resultatet är ungefärligt. | Denna inställning specificerar den minsta geolokalisationsnoggrannhet som krävs för att en adress ska anses vara tillräckligt noggrann för ruttoptimering. Standardnoggrannheten är 70%. |
-
 | Denna inställning specificerar den minsta geolokalisationsnoggrannhet som krävs för att en adress ska anses vara tillräckligt noggrann för ruttoptimering. Standardnoggrannheten är 70%. |
 
 
@@ -811,86 +463,30 @@ Informera mottagaren om statusändringar som har skett med deras order, inklusiv
 
 | Segment | Fält | Beskrivning |
 | --- | --- | --- |
-| Kundsida |
-| Kundsida | Visa spårningsnummer på kundsidan |
 | Kundsida | Visa spårningsnummer på kundsidan | Visa orderns spårningsnummer på kundsidan. |
-
-|  |
-|  | Använd den fasta spårnings-URL för att komma åt kundsidan |
 |  | Använd den fasta spårnings-URL för att komma åt kundsidan | Aktivera denna inställning för att använda ett fördefinierat format för spårnings-URL. Detta möjliggör generering av spårnings-URL från andra system genom att ange specifika värden. |
-
-| Kundsupport och chattwidget |
-| Kundsupport och chattwidget | Visa chattwidget |
 | Kundsupport och chattwidget | Visa chattwidget | Aktivera alternativet att visa specifika chattwidgets. Kontakta pinDeliver support för mer information. |
-
-|  |
-|  | Chattwidget skriptutdrag |
 |  | Chattwidget skriptutdrag | Klistra in skriptutdraget i detta fält för att aktivera chattwidgeten. |
-
-| Redigera föraranmärkningar från kundsidan |
-| Redigera föraranmärkningar från kundsidan | Anmärkning 1 |
 | Redigera föraranmärkningar från kundsidan | Anmärkning 1 | Visa föraranmärkningar på kundsidan. Kunden kan visa och ändra anmärkningar. Fältet heter Kundinformation 1 i ordern och kan användas för instruktioner till föraren, såsom: 
 – Lägg till instruktioner för föraren
 – Uppdatera eventuell portkod för flerbostadshus
 – Tala om för föraren var varorna ska lämnas om kunden inte är hemma. |
-
-|  |
-|  | Anmärkning 2 |
 |  | Anmärkning 2 | Liknande Anmärkning 2, men för Kundinformation 2. |
-
-|  |
-|  | Anmärkning 3 |
 |  | Anmärkning 3 | Liknande Anmärkning 1, men för Kundinformation 3. |
-
-| Visa statusändringar |
-| Visa statusändringar | Visa statusändringar för en given leverans |
 | Visa statusändringar | Visa statusändringar för en given leverans | Informera mottagaren om statusändringar som har skett med deras order, inklusive meddelanden som: 
 – Din beställning är på väg från terminalen.
 – Din beställning är planerad och har anlänt till terminalen.
 – Din beställning är på väg. |
-
-| Avbryt leveranser |
-| Avbryt leveranser | Tillåt kunder att avbryta leveranser |
 | Avbryt leveranser | Tillåt kunder att avbryta leveranser | Markera detta alternativ för att tillåta kunder att avbryta en leverans baserat på inställningar nedan. |
-
-|  |
-|  | Minsta antal timmar före avresa för att tillåta avbokning |
 |  | Minsta antal timmar före avresa för att tillåta avbokning | Anger antalet timmar före den planerade ruttstarten som en kund kan avbryta en leverans. |
-
-|  |
-|  | Tillåt kunder att föreslå en annan dag |
 |  | Tillåt kunder att föreslå en annan dag | Aktivera detta alternativ för att låta kunder föreslå en alternativ leveransdag. |
-
-|  |
-|  | Tidigaste möjliga leveransdag efter nuvarande och antal ytterligare leveransdagar därefter |
 |  | Tidigaste möjliga leveransdag efter nuvarande och antal ytterligare leveransdagar därefter | Om en kund vill föreslå en ny leveransdag kan du specifiera hur många dagar framåt de kan göra det. |
-
-|  |
-|  | Leveransdagar |
 |  | Leveransdagar | Anger vilka veckodagar som ska vara tillgängliga för kunder att välja som nästa leveransdag. |
-
-|  |
-|  | Uteslut avbokning på icke-leveransdagar |
 |  | Uteslut avbokning på icke-leveransdagar | Detta används ofta för att begränsa avbokningar till arbetsdagar. Till exempel, om företaget inte levererar på helger och avbokningsfönstret är inställt på 24 timmar, så är den senaste tiden du kan avbryta måndagens leveranser 72 timmar innan leveransen börjar. |
-
-| Information till kunden om att avbryta leverans |
-| Information till kunden om att avbryta leverans | Etikett för knappen ”Avbryt” |
 | Information till kunden om att avbryta leverans | Etikett för knappen ”Avbryt” | Specificera texten som ska visas som etikett för knappen ”Avbryt”. |
-
-|  |
-|  | Etikett för knappen ”Föreslå en annan dag” |
 |  | Etikett för knappen ”Föreslå en annan dag” | Specificera texten som ska visas som etikett för knappen ”Föreslå en annan dag”. |
-
-|  |
-|  | Bekräftelsemeddelande för avbokning |
 |  | Bekräftelsemeddelande för avbokning | Detta meddelande visas när kunden klickar på knappen ”Avbryt” för att säkerställa att kunden verkligen vill gå vidare med avbokningen. |
-
-|  |
-|  | Information före ”Avbryt” |
 |  | Information före ”Avbryt” | Denna information visas för kunden tillsammans med knappen ”Avbryt”. |
-
-|  |
-|  | Information efter ”Avbryt” |
 |  | Information efter ”Avbryt” | Denna information visas för kunden efter att de har genomfört avbokningen. |
 
 
@@ -972,19 +568,8 @@ För att slutföra upphämtningsordern, vanligtvis när alla hämtningsordrar ha
 
 | Händelse | Beskrivning | Excel-uppladdning | Integration |
 | --- | --- | --- | --- |
-| Skicka SMS när en kund skapas |
-| Skicka SMS när en kund skapas | Denna funktion säkerställer att så snart en ny kund skapas inom ditt system, skickas en SMS-notifikation automatiskt till dem. Systemet är utformat för att sömlöst integreras med befintliga insamlingsbeställningar när kunder läggs till i dessa beställningar och knapparna Lås och Starta insamling aktiveras. Vi rekommenderar att du utformar SMS som om insamlingsprocessen har påbörjats. |
-| Skicka SMS när en kund skapas | Denna funktion säkerställer att så snart en ny kund skapas inom ditt system, skickas en SMS-notifikation automatiskt till dem. Systemet är utformat för att sömlöst integreras med befintliga insamlingsbeställningar när kunder läggs till i dessa beställningar och knapparna Lås och Starta insamling aktiveras. Vi rekommenderar att du utformar SMS som om insamlingsprocessen har påbörjats. | X |
 | Skicka SMS när en kund skapas | Denna funktion säkerställer att så snart en ny kund skapas inom ditt system, skickas en SMS-notifikation automatiskt till dem. Systemet är utformat för att sömlöst integreras med befintliga insamlingsbeställningar när kunder läggs till i dessa beställningar och knapparna Lås och Starta insamling aktiveras. Vi rekommenderar att du utformar SMS som om insamlingsprocessen har påbörjats. | X | X |
-
-| Skicka SMS till kunder när föraren börjar hämta |
-| Skicka SMS till kunder när föraren börjar hämta | SMS skickas när knappen Starta hämtning trycks. |
-| Skicka SMS till kunder när föraren börjar hämta | SMS skickas när knappen Starta hämtning trycks. | X |
 | Skicka SMS till kunder när föraren börjar hämta | SMS skickas när knappen Starta hämtning trycks. | X |  |
-
-| Skicka SMS till kunder när leveransen inte har hämtats |
-| Skicka SMS till kunder när leveransen inte har hämtats | SMS skickas till alla kunder som inte har hämtat sina ordrar när hämtningsordern markeras som slutförd. |
-| Skicka SMS till kunder när leveransen inte har hämtats | SMS skickas till alla kunder som inte har hämtat sina ordrar när hämtningsordern markeras som slutförd. | X |
 | Skicka SMS till kunder när leveransen inte har hämtats | SMS skickas till alla kunder som inte har hämtat sina ordrar när hämtningsordern markeras som slutförd. | X | X |
 
 
@@ -1004,22 +589,11 @@ Fyll i alla tillämpliga fält på förarkortet och klicka på Skapa förare fö
 
 | Fält | Förklaring |
 | --- | --- |
-| Förnamn |
 | Förnamn | Ange förarens förnamn här. Alternativt kan du använda ett beskrivande namn om du tilldelar generiska förare, till exempel ”Förare Bil 1”. |
-
-| Efternamn |
 | Efternamn | Ange förarens efternamn. |
-
-| Mobiltelefonnummer |
 | Mobiltelefonnummer | Ange förarens mobiltelefonnummer. Detta telefonnummer kommer att användas för att skicka en länk till GO-appen till föraren. Denna app visar rutten och gör det möjligt för föraren att utföra leveranser. |
-
-| E-postadress |
 | E-postadress | Ange förarens e-postadress. Denna e-postadress kommer också att användas för att skicka en länk till GO-appen till föraren. |
-
-| Språk |
 | Språk | Specificera det föredragna språket för kommunikation med föraren och för GO-appen som föraren kommer att använda. |
-
-| Leveransgrupper |
 | Leveransgrupper | Här kan du specificera de leveransgrupper som föraren ska vara tillgänglig för. Detta innebär att föraren endast kommer att visas i listan över tillgängliga förare för tilldelning till en rutt om den rutten tillhör en av dessa specifika leveransgrupper. |
 
 
@@ -1045,76 +619,29 @@ Välj detta alternativ om du vill justera den beräknade hastigheten för detta 
 
 | Fält | Förklaring |
 | --- | --- |
-| Fordonsnamn |
 | Fordonsnamn | Ett namn för fordonet eller gruppen av fordon med identiska specifikationer. |
-
-| Maximalt antal resurser |
 | Maximalt antal resurser | Om du har flera fordon med exakt samma specifikationer och begränsningar kan du specificera kvantiteten här istället för att registrera varje fordon individuellt. |
-
-| Extern resurs-ID |
 | Extern resurs-ID | Ett externt identifieringsnummer som kan användas vid integration med externa system. Används endast när det finns en enda resurs (Maximalt antal resurser = 1). |
-
-| Arbetstidens start |
 | Arbetstidens start | Den tidigaste tiden på dagen då fordonet är tillgängligt för att börja arbeta. Om det inte alltid är samma tid, använd alternativet ”Fast starttid”. |
-
-| Arbetstidens slut |
 | Arbetstidens slut | Den senaste tiden på dagen då fordonet är tillgängligt. Om en ”Slutadress” är angiven, bör fordonet återvända dit innan denna tid. |
-
-| Fast starttid |
 | Fast starttid | Välj detta alternativ om fordonet alltid startar vid samma tid varje dag, med Arbetstidens start som starttid. |
-
-| Rast (i minuter) |
 | Rast (i minuter) | Ange en paustid som ska planeras ungefär efter den angivna Maximala arbetstiden utan paus. |
-
-| Maximal arbetstid utan rast |
 | Maximal arbetstid utan rast | Den ungefärliga maximala arbetstiden innan en paus är schemalagd för fordonet. |
-
-| Timtaxa (i SEK) |
 | Timtaxa (i SEK) | Ange en timtaxa i svenska kronor (SEK) för användning av fordonet. |
-
-| Startadress |
 | Startadress | Adressen där fordonet börjar sin rutt varje dag. Den behöver inte vara densamma som depåadressen för en leveransgrupp. Rutten börjar med att vägleda fordonet till depåadressen. |
-
-| Slutadress |
 | Slutadress | Adressen där fordonet bör avsluta sin rutt varje dag. Resan från den sista stoppet till slutadressen kommer att ingå i rutten. Om ingen slutadress är angiven, kommer rutten att ha ett ”öppet slut”. |
-
-| Maximal arbetstid |
 | Maximal arbetstid | Den maximala totala arbetstiden för fordonet. Detta innebär att den dagliga tillgängliga arbetstiden kan vara kortare än tiden mellan Arbetstidens start och Arbetstidens slut. |
-
-| Maximal sträcka |
 | Maximal sträcka | Definierar den maximala tillåtna körsträckan i kilometer för fordonet. Detta används vanligtvis för elfordon med en maximal räckvidd innan de behöver laddas om. |
-
-| Maxvikt (0=obegränsad) |
 | Maxvikt (0=obegränsad) | Den maximala lastvikten som fordonet kan bära, med en enhet som du definierar (använd samma enhet som dina ordrar). Ruttoptimeringen säkerställer att fordonen inte blir överlastade. Dock kan manuellt flyttande av kundordrar mellan fordon leda till överbelastning om du inte optimerar om fordonen och räknar om leveranstiderna. Om så är fallet, använd funktionen Räkna om leveranstider. |
-
-| Maximal volym (0=obegränsad) |
 | Maximal volym (0=obegränsad) | Den maximala volymkapaciteten som fordonet kan rymma, med en enhet som du definierar (använd samma enhet som dina beställningar). Ruttoptimeringen säkerställer att fordonen inte blir överlastade. Dock kan manuellt flyttande av kundbeställningar mellan fordon leda till överlastning om du inte reoptimerar fordonen och räknar om leveranstiderna. Om så är fallet, använd funktionen Räkna om leveranstider. |
-
-| Maximal volym 2 (0=obegränsad) |
 | Maximal volym 2 (0=obegränsad) | En ytterligare volymkapacitet. Till exempel kan Maximal volym användas för kapacitet för kylvaror, medan Maximal volym 2 kan användas för kapacitet för frysvaror. |
-
-| Leveransgrupp |
 | Leveransgrupp | Tilldela fordonet till en specifik leveransgrupp. Fordonet kommer endast att vara tillgängligt för denna specifika leveransgrupp, vilket säkerställer att olika lager har tillgång till sina egna fordon om de är uppsatta som separata leveransgrupper. |
-
-| Transportör |
 | Transportör | Koppla fordonet till en specifik transportör eller logistikpartner om det är nödvändigt. |
-
-| Använd standardförare |
 | Använd standardförare | Om detta fordon vanligtvis körs av en specifik förare kan du välja föraren här för att göra den till standardförare under ruttplaneringen. |
-
-| Aktiveringskostnad |
 | Aktiveringskostnad | Ett värde som bestämmer hur lätt det är att lägga till ett annat fordon i ruttoptimeringen. Ett högre värde innebär att mer tidsbesparing krävs innan ett ytterligare fordon läggs till. |
-
-| Fordonstaggar. Flera taggar separeras med semikolon, t.ex. ”etikett1;etikett2” |
 | Fordonstaggar. Flera taggar separeras med semikolon, t.ex. ”etikett1;etikett2” | Använd taggar för att beskriva specifika fordonsfunktioner som kylförvaring eller zonklassificering. När du skapar en kundorder kan du specificera en eller flera fordonstaggar, vilket säkerställer att beställningen endast planeras på ett fordon som matchar dessa taggar. Ett fordon med taggar kan fortfarande hantera beställningar utan taggar. |
-
-| CO2/km (i gram, heltal) |
 | CO2/km (i gram, heltal) | Ange mängden koldioxidutsläpp som produceras per kilometer som fordonet kör. |
-
-| Använd individuell hastighetsfaktor |
 | Använd individuell hastighetsfaktor | Välj detta alternativ om du vill justera den beräknade hastigheten för detta fordon i ruttoptimeringen. |
-
-| Hastighetsfaktor (i procent) |
 | Hastighetsfaktor (i procent) | Denna faktor specificerar hur snabbt fordonet bör beräknas för ruttoptimering jämfört med hastighetsgränsen. Detta är användbart för större fordon med olika hastighetsöverväganden. |
 
 
@@ -1138,40 +665,19 @@ Definierar om omlastning ska vara möjlig och/eller obligatorisk under ruttoptim
 
 | Fält | Beskrivning |
 | --- | --- |
-| Namn |
 | Namn | Namnet som visas i listor som är synliga för användare. |
-
-| Identifierare |
 | Identifierare | En intern kod som används för integrationsändamål. |
-
-| Använd depåer |
 | Använd depåer | Ändra till ”Ja” om du vill använda standard lastningstid, omlastning eller dynamiska hämtningar och leveranser. |
-
-| Depåadress |
 | Depåadress | Adressen till den fysiska depån, som används vid ruttoptimering för att planera fordonens rutter till depån innan starten. |
-
-| Standard stopptid |
 | Standard stopptid | Standard stopptid (i minuter) om ingen annan stopptid importeras för en specifik beställning. |
-
-| Extra stopptid för lägenheter |
 | Extra stopptid för lägenheter | Ytterligare minuter som läggs till Standard stopptiden för kundordrar som levereras till lägenheter. |
-
-| Extra stopptid för företag (min) |
 | Extra stopptid för företag (min) | Ytterligare minuter som läggs till Standard stopptiden för kundordrar som levereras till företag (se fältet B2B i en leverans). |
-
-| Fast stopptid på depå |
 | Fast stopptid på depå | Stopptiden på en depå, som används för både initial lastning och omlastning. |
-
-| Tillämpa omlastning vid optimering |
 | Tillämpa omlastning vid optimering | Definierar om omlastning ska vara möjlig och/eller obligatorisk under ruttoptimering. Alternativen är:
 Aldrig
 Alltid
 Valbar vid optimering |
-
-| Unik Click & Collect-text för kundsidan |
 | Unik Click & Collect-text för kundsidan | Text som visas på kundsidan för upphämtningsordrar. Denna unika text visas inte för leveranser. |
-
-| Unik text för kundsidan |
 | Unik text för kundsidan | Text som visas på kundsidan. |
 
 
@@ -1215,175 +721,53 @@ I denna flik specificerar du vilka avsändare en användare ska kunna komma åt.
 
 | Fält | Beskrivning |
 | --- | --- |
-| Användarnamn |
 | Användarnamn | Användarens användarnamn vid inloggning. Om Office 365 används som inloggningsmetod, bör detta vara Office 365-kontot, vanligtvis användarens e-postadress. |
-
-| Förnamn |
 | Förnamn | Användarens förnamn |
-
-| Efternamn |
 | Efternamn | Användarens efternamn |
-
-| Språk |
 | Språk | Välj språkpreferens för pinDeliver-gränssnittet för den specifika användaren. |
-
-| Telefonnummer |
 | Telefonnummer | Användarens telefonnummer (för referens) |
-
-| E-post |
 | E-post | Användarens e-postadress |
-
-| Använd för API |
 | Använd för API | Ange om användaren ska användas för integrationsändamål. Om valt, krävs en API-nyckel som kan genereras genom att klicka på Ny nyckel. |
-
-| Lösenord |
 | Lösenord | Ställ in ett lösenord för användaren. Detta lösenord måste ändras vid användarens första inloggning. Det används inte för Office 365- eller API-användare. |
-
-| Bekräfta lösenord |
 | Bekräfta lösenord | Ange samma lösenord igen för bekräftelse. |
-
-| API-nyckel |
 | API-nyckel | Visar den genererade API-nyckeln för en API-användare |
 
 
 | Behörigheter | Beskrivning |
 | --- | --- |
-| Optimera rutt |
 | Optimera rutt | Ger användaren möjlighet att utföra ruttoptimering och göra ändringar i befintliga rutter. |
-
-| Tilldela rutt |
 | Tilldela rutt | Gör det möjligt för användaren att tilldela förare till specifika rutter. |
-
-| Hantera fordon |
 | Hantera fordon | Gör det möjligt för användaren att lägga till, ändra och ta bort fordon. |
-
-| Hantera förare |
 | Hantera förare | Gör det möjligt för användaren att lägga till, ändra och ta bort förare. |
-
-| Hantera leverensgrupp |
 | Hantera leverensgrupp | Gör det möjligt för användaren att lägga till, ändra och ta bort leveransgrupper. |
-
-| Hantera användare |
 | Hantera användare | Gör det möjligt för användaren att lägga till, ändra och ta bort användarkonton. |
-
-| Visa rapporter |
 | Visa rapporter | Gör det möjligt för användaren att visa och exportera uppföljningsrapporter. |
-
-| Hantera avsändare |
 | Hantera avsändare | Gör det möjligt för användaren att lägga till, ändra och ta bort avsändare. |
-
-| Hantera ordrar |
 | Hantera ordrar | Gör det möjligt för användaren att lägga till, ändra och ta bort planeringsordrar och kundordrar. |
-
-| Skicka kundmeddelanden manuellt |
 | Skicka kundmeddelanden manuellt | Gör det möjligt för användaren att manuellt skicka meddelanden till kunder från Office-gränssnittet. |
-
-| API-dokumentation |
 | API-dokumentation | Ger åtkomst till API-menyn. |
-
-| Administrera företag |
 | Administrera företag | Gör det möjligt för användaren att administrera företagsinställningar som gäller för hela licensen (alla leveransgrupper, avsändare, etc.). |
-
-| Kan se förarens kontaktuppgifter |
 | Kan se förarens kontaktuppgifter | Ger åtkomst till att se förardetaljer som telefonnummer och e-postadresser. |
-
-| Hantera enkäter |
 | Hantera enkäter | Gör det möjligt för användaren att lägga till, ändra och ta bort undersökningar samt aktivera/avaktivera dem. |
-
-| Hantera trafikrestriktioner |
 | Hantera trafikrestriktioner | Gör det möjligt för användaren att lägga till, ändra och ta bort trafikrestriktioner för hela licensen. |
 
 
 | Behörighet | Transportplanering | Kundtjänst | Administratör | Superuser |
 | --- | --- | --- | --- | --- |
-| Optimera rutt |
-| Optimera rutt | X |
-| Optimera rutt | X |  |
-| Optimera rutt | X |  |  |
 | Optimera rutt | X |  |  |  |
-
-| Tilldela rutt |
-| Tilldela rutt | X |
-| Tilldela rutt | X |  |
-| Tilldela rutt | X |  |  |
 | Tilldela rutt | X |  |  |  |
-
-| Hantera fordon |
-| Hantera fordon |  |
-| Hantera fordon |  |  |
-| Hantera fordon |  |  | X |
 | Hantera fordon |  |  | X | X |
-
-| Hantera förare |
-| Hantera förare |  |
-| Hantera förare |  |  |
-| Hantera förare |  |  | X |
 | Hantera förare |  |  | X | X |
-
-| Hantera leveransgrupp |
-| Hantera leveransgrupp |  |
-| Hantera leveransgrupp |  |  |
-| Hantera leveransgrupp |  |  | X |
 | Hantera leveransgrupp |  |  | X | X |
-
-| Hantera användare |
-| Hantera användare |  |
-| Hantera användare |  |  |
-| Hantera användare |  |  | X |
 | Hantera användare |  |  | X | X |
-
-| Visa rapporter |
-| Visa rapporter | X |
-| Visa rapporter | X | X |
-| Visa rapporter | X | X |  |
 | Visa rapporter | X | X |  | X |
-
-| Hantera avsändare |
-| Hantera avsändare |  |
-| Hantera avsändare |  |  |
-| Hantera avsändare |  |  | X |
 | Hantera avsändare |  |  | X | X |
-
-| Hantera ordrar |
-| Hantera ordrar | X |
-| Hantera ordrar | X |  |
-| Hantera ordrar | X |  |  |
 | Hantera ordrar | X |  |  |  |
-
-| Skicka kundmeddelanden manuellt |
-| Skicka kundmeddelanden manuellt | X |
-| Skicka kundmeddelanden manuellt | X |  |
-| Skicka kundmeddelanden manuellt | X |  |  |
 | Skicka kundmeddelanden manuellt | X |  |  |  |
-
-| API-dokumentation |
-| API-dokumentation |  |
-| API-dokumentation |  |  |
-| API-dokumentation |  |  |  |
 | API-dokumentation |  |  |  | X |
-
-| Administrera företag |
-| Administrera företag |  |
-| Administrera företag |  |  |
-| Administrera företag |  |  |  |
 | Administrera företag |  |  |  | X |
-
-| Kan se förarnas kontaktuppgifter |
-| Kan se förarnas kontaktuppgifter | X |
-| Kan se förarnas kontaktuppgifter | X | X |
-| Kan se förarnas kontaktuppgifter | X | X |  |
 | Kan se förarnas kontaktuppgifter | X | X |  |  |
-
-| Hantera enkäter |
-| Hantera enkäter |  |
-| Hantera enkäter |  | X |
-| Hantera enkäter |  | X |  |
 | Hantera enkäter |  | X |  |  |
-
-| Hantera trafikrestriktioner |
-| Hantera trafikrestriktioner |  |
-| Hantera trafikrestriktioner |  |  |
-| Hantera trafikrestriktioner |  |  | X |
 | Hantera trafikrestriktioner |  |  | X | X |
 
 
@@ -1425,69 +809,33 @@ På den här fliken kan du anpassa utseendet på kundinformationssidan. Om du in
 
 | Fält | Beskrivning |
 | --- | --- |
-| Avsändare |
 | Avsändare | Det officiella namnet på avsändaren, som visas för slutkunden. |
-
-| SMS-avsändare |
 | SMS-avsändare | Ett kort namn, upp till 11 tecken, som visas som avsändarnamn för SMS. |
-
-| Avsändar-ID |
 | Avsändar-ID | Ett unikt identifierare som används för integration eller Excel-uppladdningar av kundbeställningar. |
-
-| Kundtjänstnummer |
 | Kundtjänstnummer | Telefonnummer till avsändarens kundtjänst, som visas för slutkunden. |
-
-| Kundtjänst E-post |
 | Kundtjänst E-post | E-postadress till avsändarens kundtjänst, som visas för slutkunden. |
-
-| Gatuadress |
 | Gatuadress | Gatuadress till avsändaren, som visas för slutkunden. |
-
-| Postnummer |
 | Postnummer | Postnummer till avsändaren, som visas för slutkunden. |
-
-| Stad |
 | Stad | Staden där avsändaren är belägen, som visas för slutkunden. |
 
 
 | Fält | Beskrivning |
 | --- | --- |
-| Tillåt ändring av avsändarinställningar |
 | Tillåt ändring av avsändarinställningar | Gör det möjligt att ställa in unika alternativ för en specifik avsändare. |
-
-| Visa paket på kundsidan |
 | Visa paket på kundsidan | Visar paket på kundens sida. |
-
-| Tillåt digital signatur |
 | Tillåt digital signatur | Tillåter kunder att signera digitalt vid leverans. |
 
 
 | Fält | Beskrivning |
 | --- | --- |
-| Ljus färg |
 | Ljus färg | Bakgrundsfärg i textområden på kundinformationssidan. En rekommenderad färgkod är #F0F0F0, eftersom den ger en ljus men inte helt vit bakgrund. |
-
-| Textfärg |
 | Textfärg | Textfärg för huvudtexter (se förklarande text under fältet Förarens anteckningar i det högra exempelbilden nedan). |
-
-| Mörk färg |
 | Mörk färg | Bakgrundsfärg på tidsschema-skylten på första sidan och rubriktexter (se rubriktexten Föraranmärkningar i exemplet till höger nedan) |
-
-| Avsändarlogotyp |
 | Avsändarlogotyp | Klicka på knappen för att ladda upp en fil som kommer att visas i det övre vänstra hörnet av kundinformationssidan. Den rekommenderade storleken är 664×182 pixlar, och det rekommenderas att använda en transparent bakgrund för bästa visuella resultat. |
-
-| Ikon för leverans/upphämtningsplats |
 | Ikon för leverans/upphämtningsplats | Klicka på knappen för att ladda upp en ikon som representerar upphämtnings- eller leveransplatser. Rekommenderad storlek är 72×72 pixlar. |
-
-| Ikon för fordonets nuvarande position |
 | Ikon för fordonets nuvarande position | Klicka på knappen för att ladda upp en ikon som visar fordonets aktuella position. Rekommenderad storlek är 72×72 pixlar. |
-
-| Font URL |
 | Font URL | En URL-länk till en specifik font för texten på kundinformationssidan. |
-
-| Fontnamn |
 | Fontnamn | Namnet på det typsnitt som specificeras i Font URL. |
-
 
 ## Trafikrestriktioner
 
@@ -1579,30 +927,14 @@ Funktioner för information om paket samt slå samman paket
 
 | Fält | Beskrivning |
 | --- | --- |
-| Kvalitetskontroll |
 | Kvalitetskontroll | Visar en checklista över uppgifter som ska utföras innan en rutt påbörjas. |
-
-| Sorteringsskanning |
 | Sorteringsskanning | Skanna paket för sortering till olika rutter. |
-
-| Flytta uppdrag |
 | Flytta uppdrag | Skapa ett uppdrag för att överföra paket mellan rutter. |
-
-| Ankomstskanning |
 | Ankomstskanning | Skanna paket vid ankomst till terminalen, vilket gör dem tillgängliga för ruttplanering. |
-
-| Ankomstrapport |
 | Ankomstrapport | Ger en sammanfattning av alla varor som skannats vid ankomst. |
-
-| Lastningsskanning |
 | Lastningsskanning | Skanna paket för lastning på fordon. |
-
-| Skapa paket |
 | Skapa paket | Skapa ett nytt paket. |
-
-| Skanning för info |
 | Skanning för info | Skanna för att samla mer information om paketet. |
-
 
 # Kundsida
 
