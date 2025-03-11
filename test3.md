@@ -24,24 +24,14 @@ Service center är vårt kraftfulla integrationsverktyg utvecklat av vårt eget 
 
 | Bild | Namn | Beskrivning |
 | --- | --- | --- |
-| ![Office](https://docs.pindeliver.com/images/interface_office.png) |
-| ![Office](https://docs.pindeliver.com/images/interface_office.png) | Office |
 | ![Office](https://docs.pindeliver.com/images/interface_office.png) | Office | Webbgränsnittet är utformat för olika uppgifter relaterade till planering av leveransruttter, koppling av förare, inställningar och uppföljning. |
 
-| ![Go App](https://docs.pindeliver.com/images/pindeliver_go_native.png) |
-| ![Go App](https://docs.pindeliver.com/images/pindeliver_go_native.png) | Go-App |
 | ![Go App](https://docs.pindeliver.com/images/pindeliver_go_native.png) | Go-App | pinDeliver Go fungerar som ett verktyg för chaufförer och erbjuder full support för att utföra leveranser effektivt. Appen innehåller en digital leveranslista baserad på den planerade rutten. Chaufförerna följer denna lista och registrerar leveransstatus vid varje stopp, tillsammans med eventuella avvikelser. Transportlednings- och kundserviceteam kan spåra leveranser i pinDeliver Office, medan kunder på rutten får uppdateringar i realtid om sina kommande leveranser. |
 
-| ![Get](https://docs.pindeliver.com/images/pindeliver_customer_information_page1.png) |
-| ![Get](https://docs.pindeliver.com/images/pindeliver_customer_information_page1.png) | Get page |
 | ![Get](https://docs.pindeliver.com/images/pindeliver_customer_information_page1.png) | Get page | Get page, kundsidan, är utformad för att kunder ska kunna se och få tillgång till information om sin leverans, inklusive leveranstid, paketdetaljer och mer. |
 
-| ![Hub App](https://docs.pindeliver.com/images/pindeliver_hub_app.png) |
-| ![Hub App](https://docs.pindeliver.com/images/pindeliver_hub_app.png) | Hubb-App |
 | ![Hub App](https://docs.pindeliver.com/images/pindeliver_hub_app.png) | Hubb-App | Hubb-appen fungerar som ett primärt verktyg för terminalen eller lagret, med målet att effektivisera processen efter plockning av varor. Appen erbjuder funktioner som underlättar dagliga uppgifter och förbättrar olika aspekter, såsom kvalitet, leveransfel och mer. Dessutom kan Hubb-appen hantera Click & Collect. |
 
-| ![Service Center](https://docs.pindeliver.com/images/interface_service_center.png) |
-| ![Service Center](https://docs.pindeliver.com/images/interface_service_center.png) | Service Center |
 | ![Service Center](https://docs.pindeliver.com/images/interface_service_center.png) | Service Center | Service center är vårt kraftfulla integrationsverktyg utvecklat av vårt eget pinDeliver-team och möjliggör sömlösa integrationsmöjligheter. Med Service Center får du möjlighet att hantera ett brett utbud av meddelandeformat, enkelt fylla i data med standardvärden och mycket mer. |
 
 
