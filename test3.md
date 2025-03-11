@@ -282,14 +282,11 @@ Skicka e-post när en rutt är låst.
 
 | Segment | Fält | Beskrivning |
 | --- | --- | --- |
-| Allmänna inställningar |
-| Allmänna inställningar | Avsändarnamn (E-post-avsändarnamn) |
 | Allmänna inställningar | Avsändarnamn (E-post-avsändarnamn) | E-post som skickas från pinDeliver visar avsändarnamnet som pinDeliver. Du kan ange ett annat avsändarnamn i detta fält. Om ett avsändarnamn anges i en leverans kommer det att ha företräde över denna inställning. |
 |  | Svarsadress (E-post-svarsadress | Som standard skickas e-post från pinDeliver från e-postadressen noreply@pindeliver.com. Om du vill att kunder ska kunna svara på e-posten kan du ange en svarsadress i detta fält. |
 |  | Välj språk för meddelanden | Välj det språk du vill använda för att skapa meddelandemallar. |
 | Leverans | Skicka e-post när en rutt är låst. | När en rutt är låst skickas detta e-postmeddelande till alla kunder på rutten. |
-|  | Aktivera manuell e-postknapp | Möjliggör en knapp i körlistan som gör det möjligt att skicka e-post till alla kunder på den specifika rutten. |
-
+|  | Aktivera manuell e-postknapp | Möjliggör en knapp i körlistan som gör det möjligt att skicka e-post till alla kunder på den specifika rutten.|
 |  | Skicka e-post när föraren startar rutten | När en förare startar en rutt skickas detta e-postmeddelande till alla kunder på rutten. |
 |  | Skicka e-post när föraren har avslutat (om)lastning | När föraren klickar på ”lastning klar” skickas ett meddelande till alla kunder som kommer att få en leverans från denna last. |
 |  | Skicka e-postpåminnelse till kund när föraren är inom X minuter från destinationen | En e-postpåminnelse skickas X minuter från destinationen. X ersätts med påminnelsetiden som ställs in i SMS-inställningarna för ”Påminnelsetid, när föraren är X minuter från kundstopp”. |
